@@ -6,9 +6,8 @@ from difflib import SequenceMatcher
 import sys
 
 """
-Returns the binary diff between two files as a ratio.
-Returns the binary diff between two files as a ratio.
-The ratio is basically (2*number of simiarlties)/(total elements in both files).
+Returns the binary diff between two files.
+The ratio is basically (2*number of simiarlties)/(total number of elements in both files).
 By inspection, it turns out that this takes into account things like alignment of common chunks
 of text or whatever, meaning this might just turn out to be more like the "efficientDiff" we envisioned
 than previously thought.
@@ -25,8 +24,17 @@ def binaryDiff(file1, file2):
 
 """
 @TODO: Implement this.
+What is this supposed to do anyway?
 """
 def efficientDiff(file1, file2):
+    return None
+
+"""
+This will probably never be implemented, because it has different
+interpretations for different files. Just defining it here to distinguish
+it from efficient diff.
+"""
+def logicalDiff(file1, file2):
     return None
 
 def main():
