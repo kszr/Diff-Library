@@ -7,11 +7,11 @@ import sys
 
 """
 Returns the binary diff between two files as a ratio.
-file1 is assumed to be the original version of the file, and 
-file2 is assumed to be a modified version of file1.
-From the documentation for SequenceMatcher:
-
-
+Returns the binary diff between two files as a ratio.
+The ratio is basically (2*number of simiarlties)/(total elements in both files).
+By inspection, it turns out that this takes into account things like alignment of common chunks
+of text or whatever, meaning this might just turn out to be more like the "efficientDiff" we envisioned
+than previously thought.
 From: http://stackoverflow.com/a/1334758
 """
 def binaryDiff(file1, file2):
